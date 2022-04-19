@@ -139,7 +139,7 @@ input[type=checkbox]:checked::after {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     position: absolute;
-    top: 3px;
+    top: 3.5px;
     left: 4px;
 }
 
@@ -215,7 +215,57 @@ input[type=checkbox]:checked::after {
     }
 
     input[type=checkbox]:checked::after {
-        top: 3px;
+        top: 3.5px;
         left: 4px;
+    }
+}
+
+@media (max-width: 667px) {
+    .formbx input[type=email] {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .formbx label {
+        left: 8px;
+    }
+
+    .input-senha input[type=password] {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .input-checkbox input[type=checkbox] {
+        position: relative;
+        left: 2px;
+    }
+
+    .input-checkbox label {
+        position: relative;
+        top: 0px;
+        left: 2px;
+    }
+
+    .input-checkbox a {
+        position: relative;
+        left: 25px;
+    }
+
+    input[type=checkbox]:checked::after {
+        top: 1px;
+    }
+
+    .cta1 a {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .cta2 a {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .cta2 img {
+        left: 80px;
     }
 }
