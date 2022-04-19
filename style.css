@@ -109,40 +109,6 @@ input[type=checkbox] {
     cursor: pointer;
 }
 
-input[type=checkbox]::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    border: 1px solid;
-}
-
-input[type=checkbox]:checked::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #5A5A5A;
-}
-
-input[type=checkbox]:checked::after {
-    content: "";
-    display: block;
-    width: 2px;
-    height: 7px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    position: absolute;
-    top: 3.5px;
-    left: 4px;
-}
-
 .cta {
     display: flex;
     flex-direction: column;
@@ -235,15 +201,6 @@ input[type=checkbox]:checked::after {
         margin: 0 auto;
     }
 
-    .input-checkbox input[type=checkbox] {
-        position: relative;
-        left: 2px;
-    }
-
-    .input-checkbox input {
-        display: none;
-    }
-
     .input-checkbox label {
         position: relative;
         top: 0px;
@@ -253,10 +210,6 @@ input[type=checkbox]:checked::after {
     .input-checkbox a {
         position: relative;
         left: 25px;
-    }
-
-    input[type=checkbox]:checked::after {
-        top: 1px;
     }
 
     .cta1 a {
